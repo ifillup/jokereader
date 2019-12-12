@@ -8,7 +8,7 @@ const JokeList = () => {
   }, []);
 
   const getJokes = async () => {
-    const res = await fetch('http://api.icndb.com/jokes/random/20');
+    const res = await fetch('https://api.icndb.com/jokes/random/20');
     const data = await res.json();
     setJokeList(data.value);
   };
